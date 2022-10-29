@@ -40,7 +40,14 @@ function render(){
        deletebtn.appendChild(iconbin);
        task.append(input,editbtn,deletebtn);
 
-     
+        //for editing
+        editbtn.addEventListener("click",()=>{
+            input.removeAttribute("readonly");
+            input.focus();
+            input.addEventListener("blur",()=>{
+                input.setAttribute("readonly",true);
+            })
+        })
 
 
     })
