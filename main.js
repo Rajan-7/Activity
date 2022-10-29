@@ -48,7 +48,13 @@ function render(){
                 input.setAttribute("readonly",true);
             })
         })
-
+        //for removing
+        deletebtn.addEventListener("click",()=>{
+            const deleteindex=array.indexOf(list);
+            array.splice(deleteindex,1);
+            render();
+            console.log(deleteindex);
+        })
 
     })
 }
