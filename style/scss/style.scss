@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../images/fonts/icomoon.eot?v6lusx');
+    src:  url('../../images/fonts/icomoon.eot?v6lusx#iefix') format('embedded-opentype'),
+      url('../../images/fonts/icomoon.ttf?v6lusx') format('truetype'),
+      url('../../images/fonts/icomoon.woff?v6lusx') format('woff'),
+      url('../../images/fonts/icomoon.svg?v6lusx#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    // speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-pencil:before {
+    content: "\e905";
+    color: #1A87E6;
+    font-size: 25px;
+  }
+  .icon-bin:before {
+    content: "\e9ac";
+    color: #c52a0c;
+    font-size: 25px;
+  }
+  .icon-plus:before {
+    content: "\ea0a";
+    color: #c1e61a;
+    font-size: 25px;
+  
+  }
+
+body{
+    background-color: rgb(36, 36, 83);
+}
+.bodycontainer{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .container{
+        .box{
+            display: grid;
+            grid-template-columns: 1fr;
+            img{
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            h2{
+                color:green;
+            }
+        }
+    }
+    .form{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        
+        .task{
+            height: 36px;
+            width: 150px;
+        }
+        .btn{
+            height: 40px;
+            .icon-plus{
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+            }
+        }
+    }
+    h4{
+        display: block;
+        color: yellow;
+        text-align: left;
+    }
+    .taskbox{
+        
+        .taskbox1{
+            display: flex;
+            flex-direction: row;
+            .task1{
+                height:35px;
+                width: 105px;
+            }
+        }
+    }
+}
