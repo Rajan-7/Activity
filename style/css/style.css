@@ -47,10 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.bodycontainer .container .box {
-  display: grid;
-  grid-template-columns: 1fr;
+  width: 100%;
 }
 .bodycontainer .container .box img {
   height: 100px;
@@ -63,16 +60,16 @@ body {
   color: green;
 }
 .bodycontainer .form {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
 .bodycontainer .form .task {
   height: 36px;
-  width: 150px;
+  width: 300px;
 }
 .bodycontainer .form .btn {
-  height: 40px;
+  height: 41.5px;
 }
 .bodycontainer .form .btn .icon-plus {
   height: 16px;
@@ -84,11 +81,14 @@ body {
   color: yellow;
   text-align: left;
 }
+.bodycontainer .taskbox {
+  margin-top: 5px;
+}
 .bodycontainer .taskbox .taskbox1 {
   display: flex;
   flex-direction: row;
 }
 .bodycontainer .taskbox .taskbox1 .task1 {
   height: 35px;
-  width: 105px;
+  width: 300px;
 }

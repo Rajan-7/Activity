@@ -27,6 +27,7 @@ function render(){
        const input=document.createElement("input");
        input.classList.add("task1");
        input.value=list.text;
+       input.setAttribute('readonly',true);
        const editbtn=document.createElement("button");
        editbtn.classList.add("edit1");
        const iconpen=document.createElement("span");
@@ -45,7 +46,15 @@ function render(){
             input.removeAttribute("readonly");
             input.focus();
             input.addEventListener("blur",()=>{
+                if(input.value === '' || input.value === null){
+                    
+                    input.value=list.text;
+                    console.log(list)
+                    return;
+                }
                 input.setAttribute("readonly",true);
+                render();
+
             })
         })
         //for removing
